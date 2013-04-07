@@ -12,8 +12,15 @@
  *= require_tree .
  */
 
+@navblue: #69d2e7;
+@black: #333;
+
 body {
   background: asset-url("bgr-major.png") repeat;
+}
+
+#header_pic {
+  margin-bottom: 13px;
 }
 
 #main_content {
@@ -27,6 +34,30 @@ body {
     border-radius: 0px;
   }
 
+  .navbar-inner {
+    background: @navblue;
+    border: 0;
+    font-size: 24px;
+
+    li {
+      border-right: 1px solid #fff;
+    }
+
+    li a {
+      line-height: 51px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+ 
+    li a#logo {
+      margin-right: 30px;
+    }
+
+    li a#upload {
+      margin-left: 81px;
+      margin-right: 81px;
+    }
+  }
 }
 
 #navbar.affix {

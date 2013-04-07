@@ -1,9 +1,10 @@
 .row
-  #navbar.span12.navbar.navbar-inverse{"data-spy" => "affix", "data-offset-top" => 238}
+  #navbar.span12.navbar{"data-spy" => "affix", "data-offset-top" => 251}
     .navbar-inner
       .main-nav
         %ul.nav.nav-pills
-          %li= link_to "Home", "#home"
-          %li= link_to "How I work", "#how"
-          %li= link_to "Need more?", "#more"
-          %li= link_to "Contact Me", "#contact"
+          %li
+            = link_to root_path, :id => "logo" do
+              = image_tag "header-logo.png"
+          %li= link_to "Upload", "#", :id => "upload"
+          %li= link_to "Search/Buy", "#"
