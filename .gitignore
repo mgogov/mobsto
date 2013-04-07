@@ -1,0 +1,14 @@
+.DS_Store
+.bundle
+db/*.sqlite3
+config/database.yml
+config/private.yml
+log/*.log
+tmp/*
+tmp/**/*
+.*.sw*
+vendor/plugins/realex/test_cards.yaml
+.project
+.sass-cache/
+public/assets/
+.rvmrc
