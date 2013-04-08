@@ -7,4 +7,6 @@
             = link_to root_path, :id => "logo" do
               = image_tag "header-logo.png"
           %li= link_to "Upload", "#", :id => "upload"
-          %li= link_to "Search/Buy", "#"
+          %li
+            %form
+              %input{"type" => "text", "data-provide" => "typeahead", "placeholder" => "search/buy"}

@@ -13,6 +13,7 @@
  */
 
 @navblue: #69d2e7;
+@searchbg: #4fb9cf;
 @black: #333;
 
 body {
@@ -44,12 +45,15 @@ body {
       border-right: 1px solid #fff;
     }
 
+    li:last-child {
+      border-right: 0px;
+    }
+
     li a {
-      line-height: 51px;
+      line-height: 77px;
       color: #fff;
       text-transform: uppercase;
-      padding-left: 0px;
-      padding-right: 0px;
+      padding: 0px;
     }
 
     li a#logo {
@@ -60,6 +64,25 @@ body {
     li a#upload {
       margin-left: 81px;
       margin-right: 81px;
+    }
+
+    form {
+      display: inline;
+      line-height: 77px;
+      margin-left: 50px;
+
+      input {
+        width: 400px;
+        height: 41px;
+        border: 0px;
+        border-radius: 12px;
+        padding: 0px 7px;
+        margin: 0px;
+        font-size: 24px;
+        background: @searchbg;
+        color: #fff;
+        text-transform: uppercase;
+      }
     }
   }
 }
